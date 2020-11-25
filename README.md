@@ -1,2 +1,2 @@
 # myCryptoExp
-Some exps depend on pycryptodome(and maybe other libraries).
+Some crypto exps depend on pycryptodome(and maybe other libraries).
