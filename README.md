@@ -1,5 +1,5 @@
 # myCryptoExp
-Some crypto exps depend on pycryptodome(and maybe other libraries).
+一些逆向常见加密，收录主要基于pycryptodome（或者其它库）的python加解密脚本 & C/C++加解密实现。
 
 现在包含的exp有……
 
