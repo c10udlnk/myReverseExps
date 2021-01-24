@@ -1,7 +1,29 @@
-# myCryptoExp
-一些逆向常见加密，收录主要基于pycryptodome（或者其它库）的python加解密脚本 & C/C++加解密实现。
+# myReverseExps
 
-现在包含的exp有……
+> By c10udlnk
 
-- DES（`des_dec.py` && `des.cpp`）
-- RC4（`rc4_dec.py` && `rc4.c`）
+一些逆向常用脚本&&常见加密的收录。
+
+P.S. 鲁棒性不强，请保证输入都是规范的，不然输出有问题就不是我的锅（逃。
+
+持续更新ing...
+
+## 逆向
+
+### Brainfuck
+
+将Brainfuck源码转换为易懂的C或者python代码，在`bfCode.bf`中输入brainfuck代码，运行相应的文件即可。
+
+建议转换为C，相比之下Python在处理char型数据时会冗杂很多。
+
+另外C++和C差不多就不另写了（
+
+- `bfCode.bf`：[Brainfuck](https://en.wikipedia.org/wiki/Brainfuck)源码。
+
+- `brainfuck2c.py`：将Brainfuck转换为C语言代码，存入`res.c`中。
+
+- `brainfuck2py.py`：将Brainfuck转换为python代码，存入`res.py`中。
+
+## 加解密
+
+（……）
