@@ -43,7 +43,7 @@ P.S. 鲁棒性不强，请保证输入都是规范的，不然输出有问题就
 
 ### VMprotect
 
-vm题（小虚拟机）的辅助翻译机，在分析完各opcode的作用以后填入python文件中，生成伪代码。
+vm（虚拟机）题的辅助翻译机，在分析完各opcode的作用以后填入python文件中，生成伪代码。
 
 - `VMtranslater.py`：将各opcode的作用语句按格式填入ins_set中，再将程序中获得的opcode填入opcode列表中，运行即可。如有需要特殊处理的opcode，请填入elif中。最后伪代码输出到`res.txt`。
 
