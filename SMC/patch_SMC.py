@@ -1,3 +1,6 @@
+# By c10udlnk(https://github.com/c10udlnk)
+# Enjoy it!
+
 def aPatch(start,end,key):
     n=0
     while(start+n!=end+1):

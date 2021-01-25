@@ -1,4 +1,4 @@
-# By c10udlnk
+# By c10udlnk(https://github.com/c10udlnk)
 # Enjoy it!
 
 bfCode=""
@@ -48,7 +48,7 @@ while i<len(bfCode):
         i+=1
         indent-=4
     else:
-        res.append("[-] UknBFCode "+bfCode[i]+" in pos "+str(i)+".\n")
+        print("[-] UknBFCode "+bfCode[i]+" in pos "+str(i)+".\n")
         i+=1
 
 with open("res.py",'w') as f:

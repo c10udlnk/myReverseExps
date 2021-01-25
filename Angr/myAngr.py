@@ -1,3 +1,6 @@
+# By c10udlnk(https://github.com/c10udlnk)
+# Enjoy it!
+
 import time
 import angr
 import sys
