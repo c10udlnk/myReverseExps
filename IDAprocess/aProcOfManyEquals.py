@@ -2,7 +2,7 @@
 # Enjoy it!
 
 data=[]
-with open('IDA_aProcOfManyEquals.txt','r') as f:
+with open('aProcOfManyEquals.txt','r') as f:
     lines=f.readlines()
     for line in lines:
         tmpStr=line.replace(' ','').replace('\n','')

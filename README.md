@@ -1,10 +1,12 @@
 # myReverseExps
 
-> By c10udlnk
+> By c10udlnk(https://github.com/c10udlnk)
 
-一些逆向常用脚本&&常见加密的收录。
+自己总结编写的一些逆向常用脚本&&常见加密/编码的实现源码和比赛时用的处理脚本。
 
-P.S. 鲁棒性不强，请保证输入都是规范的，不然输出有问题就不是我的锅（逃。
+P.S. 鲁棒性不强，请保证使用时都是规范的，不然输出有问题就不是我的锅（逃。
+
+对于各部分，readme按照其各子部分的首字母顺序进行排序。
 
 持续更新ing...
 
@@ -30,7 +32,7 @@ P.S. 鲁棒性不强，请保证输入都是规范的，不然输出有问题就
 
 - `brainfuck2py.py`：将Brainfuck转换为python代码，存入`res.py`中。
 
-### IDA处理相关
+### IDAprocess
 
 - `aProcOfManyEquals.txt`：一些连续赋值的变量（实际上是数组，为了混淆拆开了）。
 - `aProcOfManyEquals.py`：输出由`aProcOfManyEquals.txt`还原的数组。
@@ -45,8 +47,16 @@ P.S. 鲁棒性不强，请保证输入都是规范的，不然输出有问题就
 
 vm（虚拟机）题的辅助翻译机，在分析完各opcode的作用以后填入python文件中，生成伪代码。
 
-- `VMtranslater.py`：将各opcode的作用语句按格式填入ins_set中，再将程序中获得的opcode填入opcode列表中，运行即可。如有需要特殊处理的opcode，请填入elif中。最后伪代码输出到`res.txt`。
+- `VMinterpreter.py`：将各opcode的作用语句按格式填入ins_set中，再将程序中获得的opcode填入opcode列表中，运行即可。如有需要特殊处理的opcode，请填入elif中。最后伪代码输出到`res.txt`。
 
-## 加解密
+## 加解密&编码
 
-（……）
+加解密及编码算法相关脚本收录于`./_CRYPTO_`文件夹中。
+
+### DES
+
+> 参考链接：[DES算法实例详解-码农场](http://www.hankcs.com/security/des-algorithm-illustrated.html)
+
+- `DES.cpp`：DES加解密算法实现源码。
+- `DES.py`：使用封装的DES函数进行加解密。
+- `DES`：由`DES.cpp`编译而来，可以用IDA pro打开以对比逆向代码。
