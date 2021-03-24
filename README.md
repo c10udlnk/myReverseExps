@@ -53,6 +53,10 @@ vm（虚拟机）题的辅助翻译机，在分析完各opcode的作用以后填
 
 加解密及编码算法相关脚本存放于`./_CRYPTO_`文件夹中。
 
+一些工具：
+
+- `Generate_inv_SBox.py`：S盒被魔改时，可用于生成逆S盒。
+
 ### DES
 
 > 参考链接：[DES算法实例详解-码农场](http://www.hankcs.com/security/des-algorithm-illustrated.html)
