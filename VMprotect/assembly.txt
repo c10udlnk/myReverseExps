@@ -1,0 +1,190 @@
+Addr    Code
+000     xor r0, r0
+003     xor r1, r1
+006     xor r2, r2
+009     xor r3, r3
+012     xor r6, r6
+015     xor r7, r7
+018     mov r0, 0x0069
+021     mov r1, 0x006E
+024     mov r2, 0x0070
+027     mov r3, 0x0075
+030     mov r6, 0x0074
+033     mov r7, 0x0020
+036     putchar(r0)
+039     putchar(r1)
+042     putchar(r2)
+045     putchar(r3)
+048     putchar(r6)
+051     putchar(r7)
+054     mov r0, 0x0066
+057     mov r1, 0x006C
+060     mov r2, 0x0061
+063     mov r3, 0x0067
+066     mov r6, 0x003A
+069     mov r7, 0x0020
+072     putchar(r0)
+075     putchar(r1)
+078     putchar(r2)
+081     putchar(r3)
+084     putchar(r6)
+087     putchar(r7)
+090     xor r1, r1
+093     mov r0, getchar()
+096     push r0
+099     add r1, 0x0001
+102     cmp r1, 0x0026
+105     jl 093
+108     exit
+
+000     xor r2, r2
+003     mov arr[r2], 0x00FF
+006     add r2, 0x0001
+009     mov arr[r2], 0x0223
+012     add r2, 0x0001
+015     mov arr[r2], 0x023B
+018     add r2, 0x0001
+021     mov arr[r2], 0x0237
+024     add r2, 0x0001
+027     mov arr[r2], 0x0237
+030     add r2, 0x0001
+033     mov arr[r2], 0x024B
+036     add r2, 0x0001
+039     mov arr[r2], 0x022B
+042     add r2, 0x0001
+045     mov arr[r2], 0x00FB
+048     add r2, 0x0001
+051     mov arr[r2], 0x022B
+054     add r2, 0x0001
+057     mov arr[r2], 0x0223
+060     add r2, 0x0001
+063     mov arr[r2], 0x024F
+066     add r2, 0x0001
+069     mov arr[r2], 0x00EF
+072     add r2, 0x0001
+075     mov arr[r2], 0x0237
+078     add r2, 0x0001
+081     mov arr[r2], 0x00EF
+084     add r2, 0x0001
+087     mov arr[r2], 0x024F
+090     add r2, 0x0001
+093     mov arr[r2], 0x024F
+096     add r2, 0x0001
+099     mov arr[r2], 0x0223
+102     add r2, 0x0001
+105     mov arr[r2], 0x0223
+108     add r2, 0x0001
+111     mov arr[r2], 0x023B
+114     add r2, 0x0001
+117     mov arr[r2], 0x0237
+120     add r2, 0x0001
+123     mov arr[r2], 0x00FF
+126     add r2, 0x0001
+129     mov arr[r2], 0x0233
+132     add r2, 0x0001
+135     mov arr[r2], 0x0233
+138     add r2, 0x0001
+141     mov arr[r2], 0x0233
+144     add r2, 0x0001
+147     mov arr[r2], 0x0237
+150     add r2, 0x0001
+153     mov arr[r2], 0x024B
+156     add r2, 0x0001
+159     mov arr[r2], 0x0233
+162     add r2, 0x0001
+165     mov arr[r2], 0x024F
+168     add r2, 0x0001
+171     mov arr[r2], 0x022B
+174     add r2, 0x0001
+177     mov arr[r2], 0x022B
+180     add r2, 0x0001
+183     mov arr[r2], 0x024B
+186     add r2, 0x0001
+189     mov arr[r2], 0x00EF
+192     add r2, 0x0001
+195     exit
+
+000     xor r2, r2
+003     mov r0, arr[r2]
+006     sub r0, 0x0063
+009     mov arr[r2], r0
+012     add r2, 0x0001
+015     cmp r2, 0x0020
+018     jl 003
+021     exit
+
+000     pop r0
+003     cmp r0, 0x007D
+006     jz 054
+009     mov r0, 0x0077
+012     mov r1, 0x0072
+015     mov r2, 0x006F
+018     mov r3, 0x006E
+021     mov r6, 0x0067
+024     mov r7, 0x0021
+027     putchar(r0)
+030     putchar(r1)
+033     putchar(r2)
+036     putchar(r3)
+039     putchar(r6)
+042     putchar(r7)
+045     mov r0, 0x000A
+048     putchar(r0)
+051     exit
+054     mov r8, 0x0100
+057     cmp r8, 0x00E1
+060     jl 075
+063     pop r0
+066     mov arr[r8], r0
+069     sub r8, 0x0001
+072     jmp 057
+075     pop r0
+078     cmp r0, 0x007B
+081     jnz 009
+084     pop r0
+087     cmp r0, 0x0067
+090     jnz 009
+093     pop r0
+096     cmp r0, 0x0061
+099     jnz 009
+102     pop r0
+105     cmp r0, 0x006C
+108     jnz 009
+111     pop r0
+114     cmp r0, 0x0066
+117     jnz 009
+120     xor r9, r9
+123     mov r10, 0x00E1
+126     mov r7, arr[r9]
+129     mov r6, arr[r10]
+132     xor r6, 0x0042
+135     shl r6, 0x0002
+138     cmp r6, r7
+141     jnz 009
+144     add r9, 0x0001
+147     add r10, 0x0001
+150     cmp r9, 0x0020
+153     jl 126
+156     mov r0, 0x0063
+159     mov r1, 0x006F
+162     mov r2, 0x0072
+165     mov r3, 0x0072
+168     mov r6, 0x0065
+171     mov r7, 0x0063
+174     putchar(r0)
+177     putchar(r1)
+180     putchar(r2)
+183     putchar(r3)
+186     putchar(r6)
+189     putchar(r7)
+192     mov r0, 0x0074
+195     mov r1, 0x006C
+198     mov r2, 0x0079
+201     mov r3, 0x0021
+204     mov r6, 0x000A
+207     putchar(r0)
+210     putchar(r1)
+213     putchar(r2)
+216     putchar(r3)
+219     putchar(r6)
+222     exit
